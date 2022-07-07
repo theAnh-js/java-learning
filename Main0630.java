@@ -48,6 +48,19 @@ public class Main0630 {
         someone.say(myHero.name, "strong");
         someone.say(myHero.name, "nice guy");
 
+        // 人々の子供たちから見たHeroは：(継承する)
+        People kid = new People();
+        System.out.println("人々の子供たちはヒーローのことをどう思っているか？");
+        kid.say(myHero.name, "handsome");
+        kid.say(myHero.name, "menly");
+        kid.say(myHero.name, "brave");
+
+        // 人々の子供たちの夢は：（継承しない）
+        System.out.println("人々の子供たちの夢は：");
+        Kids kids = new Kids();
+        kids.getDreams(myHero.name);
+        kids.getDreams("Spider man");
+
         // 彼の趣味は：
         System.out.println("ヒーローの趣味は何か知ってる？");
         someone.think(myHero.name, "japanese foods");
